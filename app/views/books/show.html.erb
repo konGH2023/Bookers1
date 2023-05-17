@@ -1,10 +1,10 @@
+<%= form_with model: @book, url: 'books', method: :post do |f| %>
 <h2>title</h2>
-<%= form_with model: @book, url: '/books:id', method: :post do |f| %>
 <p><%= @book.title %></p>
 
 <h2>body</h2>
 <p><%= @book.body %></p>
 
-<%= link_to "Edit", edit_book_path(book.id)%>
-<%= link_to "Back", '/books' %>
+<%= link_to "Edit", edit_book_path(@book)%>
+<%= link_to "Back", books_path %>
 <% end %>

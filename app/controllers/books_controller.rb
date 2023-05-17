@@ -13,7 +13,7 @@ class BooksController < ApplicationController
     # 3. データをデータベースに保存するためのsaveメソッド実行
     book.save
     # 4. 画面へリダイレクト先
-    redirect_to book_path(book.id)
+    redirect_to show_book_path(book.id)
   end
 
   def show
