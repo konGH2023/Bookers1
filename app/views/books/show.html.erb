@@ -1,3 +1,4 @@
+<%= flash[:notice] %>
 <%= form_with model: @book, url: 'books', method: :post do |f| %>
 <h2>title</h2>
 <p><%= @book.title %></p>
